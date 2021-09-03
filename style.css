@@ -1,0 +1,206 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;                        
+}
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Shrikhand',sans-serif;
+    color: black;
+    margin: 0;
+    font-weight: normal;
+    padding: 0.6rem;
+}
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+}
+section {
+    padding: 0 1rem;
+}
+.fa-map-marker-alt {
+    padding-right: 0.8rem;
+}
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;  
+    font-weight: 500;
+    color:#353535;
+    padding-right: 1.5rem;
+    
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 1rem 0 3.5rem;
+}
+.intro__title {
+    margin-bottom: 0;
+}
+.intro p, .intro__title {
+    text-align: center;
+}
+.intro p {
+    padding-bottom: 1rem;
+}
+.btn {
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    padding: 0.85rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 3px 7px 0px rgb(0 0 0 / 35%);
+}
+.btn:hover {
+    background: linear-gradient(225deg, rgba(147,86,220,1) 3%, rgba(246,63,216,0.8354692218684349) 9%, rgba(162,83,219,1) 14%, rgba(246,63,216,0.8354692218684349) 20%, rgba(255,61,215,1) 30%, rgba(175,80,219,1) 37%, rgba(243,64,216,0.7794468129048494) 50%, rgba(240,65,216,1) 55%, rgba(147,86,220,0.9026961126247374) 65%, rgba(223,69,217,0.8550770650056898) 85%, rgba(147,86,220,0.8158613787311799) 100%);
+    filter: contrast(150%);
+    box-shadow: 1px 4px 0px 1px rgba(0,0,0,0.62);
+    transform: scale(1.05);
+}
+.functioning {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.functioning h2 {
+    padding-bottom: 0.5rem;
+}
+.instructions__step {
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 20%);        
+    border-radius: 1.25rem;
+    display: flex;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    background-color: #F6F6F6;
+}
+.instructions__step:hover {
+    transform: scale(0.9) translate(1vh, 0) skew(-10deg, 0);
+    transition-duration: 150ms;
+    box-shadow: 0 3px 10px 1px rgb(0 0 0 / 30%);  
+}
+.instructions__number {
+    border-radius: 100%;
+    color: white;
+    background-color: #9356DC;
+    margin: 1rem 0;
+    padding: 0.2rem 0.5rem;
+    position: relative;
+    right: 1.35rem;
+}
+.instructions__icon {
+    display: flex;
+    padding: 1.35rem 1.5rem 0 0;
+    font-size: 110%;
+    color: #7e7e7e;
+}
+.instructions__step p {
+    font-weight: bold;
+    padding-top: 0.3rem;
+}
+.restaurant {
+    background-color: #F6F6F6;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+.restaurant h3, .restaurant p {
+    margin: 0
+}
+.grid {
+    display: grid;
+}
+.box {
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+    margin-bottom: 1.25rem;
+}
+.grid__text {
+    color: black;
+    padding: 0.5rem 1rem 1rem;
+    line-height: 1.6rem;
+}
+.grid__new {
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    position: absolute;
+    right: 2rem;
+}
+.fa-heart {
+    font-size: 1.5rem;
+    color: black
+}
+.fa-heart:hover {
+    font-weight: bold;
+    color: #FF79DA;
+    /* background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%); */
+}
+img {
+    object-fit: cover;
+    height: 9rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 0.25rem 1rem 2rem;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75rem;
+}
+footer p {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.15rem;
+}
+.fa-hands-helping {
+    font-size: 75%;
+    padding-right: 0.2rem;
+}
+.fa-utensils {
+    padding-right: 0.25rem;
+}
+
+@media screen and (min-width: 990px) {
+    .functioning h2 {
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }   
+    .functioning {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+    .instructions {
+        display: flex;
+        justify-content: center;
+    }
+    .instructions__step {
+        margin-left: 5.4vh;
+    }
+    .instructions__step p {
+        padding-right: 1.5rem;
+    }
+    .instructions__step:hover {
+        transform: scale(1.1)
+    }  
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 0.5rem;
+        margin: 0 3rem;
+    }
+    #restaurant {
+        margin-left: 3rem;
+    }
+    .grid__new1{
+        
+    }
+}
