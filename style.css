@@ -70,6 +70,9 @@ section {
 .functioning h2 {
     padding-bottom: 0.5rem;
 }
+.instructions {
+    cursor: pointer;
+}
 .instructions__step {
     box-shadow: 0 3px 10px 0 rgb(0 0 0 / 20%);        
     border-radius: 1.25rem;
@@ -79,7 +82,7 @@ section {
     background-color: #F6F6F6;
 }
 .instructions__step:hover {
-    transform: scale(0.9) translate(1vh, 0) skew(-10deg, 0);
+    transform: scale(0.9) translate(1vh, 0);
     transition-duration: 150ms;
     box-shadow: 0 3px 10px 1px rgb(0 0 0 / 30%);  
 }
@@ -123,6 +126,9 @@ section {
     padding: 0.5rem 1rem 1rem;
     line-height: 1.6rem;
 }
+.grid__info {
+    position: relative;
+}
 .grid__new {
     background-color: #99E2D0;
     color: #008766;
@@ -130,16 +136,26 @@ section {
     border-radius: 0.25rem;
     font-weight: 500;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
+    bottom: 6.5rem;
+}
+.grid__heart {
+    position: relative;
 }
 .fa-heart {
-    font-size: 1.5rem;
-    color: black
+    font-size: 1.75rem;
+    color: black;
+    position: absolute;
+    right: 2rem;
+    bottom: 1.75rem;
 }
 .fa-heart:hover {
     font-weight: bold;
-    color: #FF79DA;
-    /* background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%); */
+    font-size: 1.75rem;
+    background: -webkit-linear-gradient(#9356DC 0%, #FF79DA 100%); 
+    -webkit-background-clip: text;   /* permet de mettre un dégradé sur du texte plutot qu'un background */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 img {
     object-fit: cover;
@@ -170,6 +186,9 @@ footer p {
 }
 
 @media screen and (min-width: 990px) {
+    .intro {
+        padding: 1rem 0 2rem;
+    }
     .functioning h2 {
         margin-left: 3rem;
         margin-bottom: 0;
@@ -199,8 +218,5 @@ footer p {
     }
     #restaurant {
         margin-left: 3rem;
-    }
-    .grid__new1{
-        
     }
 }
