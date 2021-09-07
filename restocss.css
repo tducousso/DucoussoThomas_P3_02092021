@@ -2,14 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;                        
 }
-a {
+a, a:visited {
     text-decoration: none;
     color: white;
     cursor: pointer;
-}
-a:visited {
-    text-decoration: none;
-    color: white;
 }
 h1 {
     font-family: 'Shrikhand',sans-serif;
@@ -17,6 +13,9 @@ h1 {
     margin: auto;
     font-weight: normal;
     padding: 0.6rem;
+}
+.fa-arrow-left {
+    color: #353535;
 }
 header {
     display: flex;
@@ -30,24 +29,100 @@ header a {
 }
 img {
     width: 100%;
-    height: 19rem;
+    height: 100%;
     object-fit: cover;
+    max-height: 30rem;
 }
 h2 {
     font-family: 'Shrikhand',sans-serif;
+    font-weight: 500;
+    margin-top: 0.7rem;
+    font-size: 1.75rem;
 }
 .grid {
+    display: grid;
     background-color: #F6F6F6;
     border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
+    position: relative;
+    top: -3rem;
+}
+.grid__heart {
+    position: relative;
+}
+.fa-heart {
+    font-size: 1.75rem;
+    color: black;
+    position: absolute;
+    right: 0.85rem;
+    bottom: 1.8rem;
+    cursor: pointer;
+}
+.fa-heart:hover {
+    font-weight: bold;
+    font-size: 1.75rem;
+    background: -webkit-linear-gradient(#9356DC 0%, #FF79DA 100%); 
+    -webkit-background-clip: text;   /* permet de mettre un dégradé sur du texte plutot qu'un background */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grid p,  .grid h4 {
+    margin: 0;
+   /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+    */
+}
+.grid p, .grid h3 {
+    font-weight: 300;
+}
+span {
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 1.2rem;
+}
+h4 {
+    font-size: larger;
+    font-weight: 600;
+}
+.grid__main {
+    position: relative;
+}
+h3 {
+    margin-bottom: 1.5rem;
+}
+h3::before {
+    content: "";
+    background-color: #99E2D0;
+    width: 2.25rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 2.75rem;
+
+}
+.grid__block {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    height: 2.5rem; 
 }
 
 
-
+section {
+    background-color: #F6F6F6;
+    padding-bottom: 2rem;
+}
 .btn {
     background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     padding: 0.85rem 1.5rem;
     border-radius: 2rem;
     box-shadow: 1px 3px 7px 0px rgb(0 0 0 / 35%);
+    text-align: center;
 }
 .btn:hover {
     background: linear-gradient(225deg, rgba(147,86,220,1) 3%, rgba(246,63,216,0.8354692218684349) 9%, rgba(162,83,219,1) 14%, rgba(246,63,216,0.8354692218684349) 20%, rgba(255,61,215,1) 30%, rgba(175,80,219,1) 37%, rgba(243,64,216,0.7794468129048494) 50%, rgba(240,65,216,1) 55%, rgba(147,86,220,0.9026961126247374) 65%, rgba(223,69,217,0.8550770650056898) 85%, rgba(147,86,220,0.8158613787311799) 100%);
