@@ -186,13 +186,13 @@ section {
 }
 /* Coche */
 .button {
-    width: 5rem;
+    width: 4rem;
     height: 6rem;
 	background: #99e2d0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: -7rem;
+	margin-right: -4rem;
 	transition-duration: 0.5s;
 	transition-timing-function: ease;
     position: absolute;
@@ -216,7 +216,7 @@ section {
     transition-duration: 0.5s;
 }
 .grid__block:hover span {
-    margin-right: 5rem;
+    margin-right: 4rem;
     transition-duration: 0.5s;
 }
 footer {
