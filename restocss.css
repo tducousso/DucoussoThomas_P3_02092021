@@ -38,6 +38,7 @@ h2 {
     font-weight: 500;
     margin-top: 0.7rem;
     font-size: 1.75rem;
+    width: 85%;
 }
 .grid {
     display: grid;
@@ -72,6 +73,7 @@ h2 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    width: 87%;
 }
 .grid p, .grid h3 {
     font-weight: 300;
@@ -219,6 +221,14 @@ section {
     margin-right: 4rem;
     transition-duration: 0.5s;
 }
+.grid__block:hover p {
+    width: 68%;
+    transition-duration: 0.25s;
+}
+.grid__block:hover h4 {
+    width: 68%;
+    transition-duration: 0.25s;
+}
 footer {
     background-color: #2e2e2e;
     color: white;
@@ -241,21 +251,6 @@ footer p {
     padding-right: 0.25rem;
 }
 
-@media screen and (min-width: 900px) {
-    section {
-        margin: 0 5rem;
-    }
-    .grid {
-        padding: 2rem;
-    }
-    footer p {
-        display: flex;
-        justify-content: center;
-    }
-    .footer__list {
-        align-items: center;
-    }
-}
 @media screen and (min-width: 1200px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
@@ -275,5 +270,20 @@ footer p {
         top: 2.5rem;
         margin-top: 0;
         width: 30%;
+    }
+}
+@media screen and (min-width: 900px) {
+    section {
+        margin: 0 5rem;
+    }
+    .grid {
+        padding: 2rem;
+    }
+    footer p {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__list {
+        align-items: center;
     }
 }
