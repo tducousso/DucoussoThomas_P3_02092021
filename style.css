@@ -87,6 +87,9 @@ section {
     background-color: #9356dc25;
     filter: contrast(200%);
 }
+.instructions__step:hover .instructions__icon{
+    color:#9356DC
+}
 .instructions__number {
     border-radius: 100%;
     color: white;
