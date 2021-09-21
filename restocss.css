@@ -1,3 +1,7 @@
+html {
+    max-width: 2000px;
+    scroll-behavior: smooth
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;                        
@@ -67,6 +71,26 @@ h2 {
     -webkit-background-clip: text;   /* permet de mettre un dégradé sur du texte plutot qu'un background */
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fondu 0.8s Linear both;
+    transition-duration: 800ms;
+    transform: scale(1.15);
+}
+@keyframes fondu{
+    0% {
+        opacity: 0;
+        }
+    25% {
+        opacity: 0.25;
+        }    
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .grid p,  .grid h4 {
     margin: 0;
@@ -125,19 +149,19 @@ h3::before {
 }
 /* annimation menu */
 .grid__delay1{
-    -webkit-animation-delay: 0.10s;
+    -webkit-animation-delay: 0.12s;
     animation-delay: 0.12s;
 }
 .grid__delay2 {
-    -webkit-animation-delay: 0.25s;
+    -webkit-animation-delay: 0.27s;
     animation-delay: 0.27s;
 }
 .grid__delay3 {
-    -webkit-animation-delay: 0.35s;
+    -webkit-animation-delay: 0.42s;
     animation-delay: 0.42s;
 }
 .grid__delay4 {
-    -webkit-animation-delay: 0.45s;
+    -webkit-animation-delay: 0.57s;
     animation-delay: 0.57s;
 }
 @-webkit-keyframes fadeInUp {
@@ -178,6 +202,7 @@ section {
     justify-content: center;
     justify-self: center;
     width: 25%;
+    opacity: 100%;
 }
 .btn:hover {
     background: linear-gradient(to top,rgba(147,86,220,1) 0%,rgba(255,121,218,1) 100%);
@@ -185,7 +210,7 @@ section {
     opacity: 80%;
     transform: scale(1.05);
     box-shadow: 0px 4px 2px 0px rgb(0 0 0 / 75%), inset 1px 0.5px 0px 2px rgb(147 86 220 / 50%);
-    transition-duration: 0.5s;
+    opacity: 100%;
 }
 /* Coche */
 .button {
