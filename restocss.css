@@ -1,10 +1,8 @@
-html {
+html,body {
     max-width: 2000px;
-    scroll-behavior: smooth
-}
-body {
+    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
-    margin: 0;                        
+    margin: auto;                        
 }
 a, a:visited {
     text-decoration: none;
@@ -208,9 +206,8 @@ section {
     background: linear-gradient(to top,rgba(147,86,220,1) 0%,rgba(255,121,218,1) 100%);
     filter: contrast(250%);
     opacity: 80%;
-    transform: scale(1.05);
-    box-shadow: 0px 4px 2px 0px rgb(0 0 0 / 75%), inset 1px 0.5px 0px 2px rgb(147 86 220 / 50%);
-    opacity: 100%;
+    box-shadow: 0px 4px 2px 0px rgb(0 0 0 / 85%), inset 1px 0.5px 0px 2px rgb(147 86 220 / 50%);
+    transition-duration: 0.9s;
 }
 /* Coche */
 .button {
