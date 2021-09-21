@@ -1,3 +1,7 @@
+html {
+    max-width: 2000px;
+    scroll-behavior: smooth
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;                        
@@ -169,6 +173,26 @@ section {
     -webkit-background-clip: text;   /* permet de mettre un dégradé sur du texte plutot qu'un background */
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fondu 0.8s Linear both;
+    transition-duration: 800ms;
+    transform: scale(1.15);
+}
+@keyframes fondu{
+    0% {
+        opacity: 0;
+        }
+    25% {
+        opacity: 0.25;
+        }    
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 img {
     object-fit: cover;
